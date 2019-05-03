@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/fond.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bus-1{
+    position: absolute;
+    top: 90%;
+    left: 83%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.textowhite{
+    color: white;
+}
+
+.bus-1:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------- Contenedor Login -------------------- */
+
+.contenedor-login{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 595px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 10%;
+    left: 0;
+    height: 530px;
+    width: 350px;
+}
+
+/* -------------------- Contenedor Logo -------------------- */
+
+.contenedor-logo{
+    position: absolute;
+    width: 100%;
+    top: 5%;
+}
+
+.bus-2{
+    margin-top: 5%;
+    color: #CF2A27;
+    font-size: 50px;
+    padding-bottom: 5px;
+    animation-name: rotacion;
+    animation-duration: 3s;
+}
+
+@keyframes rotacion {
+    from{
+        transform: rotateY(360deg);
+    }
+}
+
+p{
+    position: absolute;
+    font-size: 30px;
+    top: 23%;
+    left: 10%;
+}
+
+/* -------------------- Contenedor Ingreso -------------------- */
+
+.contenedor-ingreso{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 30%;
+}
+
+.correo{
+    position: absolute;
+    top: 8%;
+    width: 80%;
+    height: 35%;
+    border: solid 2px;
+    border-radius: 3px;
+    left: 10%;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.contrasena{
+    position: absolute;
+    top: 55%;
+    width: 80%;
+    height: 35%;
+    border: solid 2px;
+    border-radius: 3px;
+    left: 10%;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.correo:focus, 
+.contrasena:focus{
+    outline: 0px; 
+    border: solid 2px #CF2A27;
+}
+
+/* -------------------- Inicio de sesion -------------------- */
+
+.anchor-olvidaste{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    color: #7A7CAE;
+    text-decoration: none;
+}
+
+.anchor-olvidaste:hover{
+    text-decoration: none;
+    color: #7A7CAE;
+}
+
+.boton-sesion{
+    position: absolute;
+    top: 60%;
+    width: 80%;
+    height: 8%;
+    border: solid 0px;
+    border-radius: 3px;
+    left: 10%;
+    background-color: #CF2A27;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.boton-sesion:hover{
+    background-color: #F40612;
+}
+
+/* -------------------- Contenedor Redes -------------------- */
+
+.contenedor-ingreso-redes{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 15%;
+}
+
+.facebook{
+    color: #4267B2;
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.boton-facebook{
+    position: absolute;
+    top: 8px;
+    left: 21%;
+    width: 69%;
+    height: 39%;
+    background-color: #4267B2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.google-plus{
+    color: #DD5144;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10%;    
+}
+
+.boton-google{
+    position: absolute;
+    top: 48px;
+    left: 21%;
+    width: 69%;
+    height: 39%;
+    background-color: #DD5144;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*--------------------Registro Usuarios------------------*/
+
+.contenedor-registrarse{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-registrarse p{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 17px;
+}
+
+.boton-registrarse{
+    position: absolute;
+    top: 8px;
+    left: 60%;
+    width: 30%;
+    height: 58%;
+    background-color: #CF2A27;
+    height: 38%;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton-registrarse:hover{
+    background-color: #F40612;
+}
+
+/* -------------------- Modal -------------------- */
+
+.modal-header i{
+    font-size: 36px;
+    color: #CF2A27;
+}
+
+h4{
+    margin-right: 40%;
+}
+
+.close{
+    position: absolute;
+    top: 1%;
+    left: 92%;
+}
+
+.btn-success{
+    background-color: #CF2A27;
+}
+
+.btn-success:hover{
+    background-color: #F40612;
+}
+
+/*--------------------Contenedor Usuarios------------------*/
+
+.contenedor-registrarse{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-registrarse p{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 15px;
+}
+
+.boton-registrarse{
+    position: absolute;
+    top: 8px;
+    left: 60%;
+    width: 30%;
+    height: 58%;
+    background-color: #CF2A27;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton-registrarse:hover{
+    background-color: #F40612;
+}
+
+/* -------------------- Modal -------------------- */
+
+.modal-header i{
+    font-size: 36px;
+    color: #CF2A27;
+}
+
+h4{
+    margin-right: 40%;
+}
+
+.close{
+    position: absolute;
+    top: 1%;
+    left: 92%;
+}
+
+.btn-success{
+    background-color: #CF2A27;
+}
+
+.btn-success:hover{
+    background-color: #F40612;
+}
+
+/* -------------------- Pie de pagina -------------------- */
+
+footer p{
+    position: absolute;
+    font-size: 15px;
+    top: 93%;
+    left: 2%;
+    color: white;
+}
+

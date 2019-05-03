@@ -1,0 +1,58 @@
+
+.navbarnav2{
+    margin-right: 38%;
+}
+
+.encabezado {
+    background-color: #0069D9!important;
+    color: white;
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+}
+.text1{
+    color:white!important;
+}
+.text1:hover { 
+    text-decoration: underline;
+    color: black!important;
+}
+.imagen:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(52, 137, 186);
+    -webkit-box-shadow: 0px 0px 15px 15px rgb(52, 137, 186);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/*para la pagina de login*/
+#centrado{
+    padding-top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fondoLogin{
+    background-color: white;
+}
+
+.taman{
+    
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.jumbotron{
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: silver 2px solid;
+}
+
+.bg-dark1 {
+    background-color: rgb(68, 80, 93)!important;
+}

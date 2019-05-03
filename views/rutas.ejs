@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rutas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+        
+        #section1 {
+            padding-top: 50px;
+            height: 800px;
+            color: #fff;
+            background-color: #1E88E5;
+        }
+        
+        #section2 {
+            padding-top: 50px;
+            height: 800px;
+            color: #fff;
+            background-color: #673ab7;
+        }
+        
+        #section3 {
+            padding-top: 50px;
+            height: 800px;
+            color: #fff;
+            background-color: #ff9800;
+        }
+        
+        #section4 {
+            padding-top: 50px;
+            height: 800px;
+            color: #fff;
+            background-color: #00ff80;
+        }
+        
+        #section41 {
+            padding-top: 50px;
+            height: 800px;
+            color: #fff;
+            background-color: #00bcd4;
+        }
+        
+        #section42 {
+            padding-top: 50px;
+            height: 800px;
+            color: #fff;
+            background-color: #009688;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+                <a class="navbar-brand" href="/dashboard">elBarrio.com</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Pulperia Bendicion</a></li>
+                        <li><a href="#section2">Mercadito Navarro</a></li>
+                        <li><a href="#section3">Pulp Kennedy</a></li>
+                        <li><a href="#section4">Hedman Alas</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mira Mas<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Sastreria Sanchez</a></li>
+                                <li><a href="#section42">Zapateria Chui</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="section1" class="container-fluid">
+        <h1>Pulperia Bendicion</h1>
+        <div class="container">
+            <h2>Pulperia Bendicion</h2>
+
+            <p>Le ofrecemos los siguientes productos:</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[4].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[4].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[4].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[2].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[2].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[2].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[3].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[3].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[3].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="section2" class="container-fluid">
+        <h1>Mercadito Navarro</h1>
+        <div class="container">
+            <h2>Mercadito Navarro</h2>
+
+            <p>Le ofrecemos los siguientes productos:</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[8].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[8].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[8].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[5].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[5].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[5].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[6].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[6].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[6].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="section3" class="container-fluid">
+        <h1>Pulp Kennedy</h1>
+        <div class="container">
+            <h2>Pulp Kennedy</h2>
+
+            <p>Le ofrecemos los siguientes productos:</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[4].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[4].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[4].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[2].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[2].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[2].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="section4" class="container-fluid">
+        <h1>Hedman Alas</h1>
+        <div class="container">
+
+            <p>Le ofrecemos los siguientes productos:</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="section41" class="container-fluid">
+        <h1>Sastreria Sanchez</h1>
+        <div class="container">
+
+            <p>Le ofrecemos los siguientes productos:</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div id="section42" class="container-fluid">
+        <h1>Zapateria Chui</h1>
+        <div class="container">
+
+            <p>Le ofrecemos los siguientes productos:</p>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[14].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[14].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[14].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+
+                        <%  { %>
+                            <tr>
+                                <td>
+                                    <%= ruta[13].nombre_producto %>
+                                </td>
+                                <td>
+                                    <%= ruta[13].descripcion_producto%>
+                                </td>
+                                <td>
+                                    <%= ruta[13].precio_producto %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../public/img/icon_bus.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../public/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/login-custom.css">
+    <link rel="stylesheet" href="../public/css/responsive-custom.css">
+
+    <title>elBarrio - Encuentra tu producto</title>
+
+</head>
+
+<body>
+    <a href="/" class="navbar-brand text1 bus-1">
+
+    </a>
+    <% if(message.length > 0) { %>
+        <div style="color: white; background-color: red; position: absolute; top: 49%; left: 531px; z-index: 1; 
+        width: 304px; border-radius: 3px; height: 30px; padding-left: 15px; padding-top: 2px;">
+            <%= message %>
+        </div>
+        <% } %>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-8">
+                        <!-- Contenedor Login -->
+                        <div class="contenedor-login">
+                            <!-- Contenedor Logo -->
+                            <div class="contenedor-logo">
+                                <center>
+                                    <i class="fas bus-2 fa-bus"></i>
+                                </center>
+                            </div>
+                            <p>Inicia sesión</p>
+                            <!-- Contenedor Ingreso -->
+                            <form action="/login" method="post">
+                                <div class="contenedor-ingreso">
+                                    <input type="text" class="correo" name="username" placeholder="Correo electrónico">
+                                    <input type="password" class="contrasena" name="password" placeholder="Contraseña">
+                                </div>
+                                <a href="/cambiarContrasena" class="anchor-olvidaste" id="a-contraseña">¿Olvidaste tu contraseña?</a>
+                                <button type="submit" class="boton-sesion">Iniciar sesión</button>
+                            </form>
+                            <!-- Contenedor Redes Sociales -->
+                            <div class="contenedor-ingreso-redes">
+                                <i class="fab facebook fa-facebook-square"></i>
+                                <button type="button" class="boton-facebook" id="btn-facebook">Iniciar sesión con Facebook</button>
+                                <i class="fab google-plus fa-google-plus-square"></i>
+                                <button type="button" class="boton-google" id="btn-google">Iniciar sesión con Google</button>
+                            </div>
+                            <!-- Contenedor Registrarse -->
+                            <!-- <div class="contenedor-registrarse">
+                        <p>¿Aún no estás en GoBus?</p>
+                        <button type="button" class="boton-registrarse" onclick="registrar();">Registrarse</button>
+                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <footer>
+                <p>© elBarrio-2019</p>
+            </footer>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <!--     <script type="text/javascript" src="../js/login.js"></script>
+ -->
+            <script>
+                function registrar() {
+                    location.href = "/registroUsuarios"
+                }
+            </script>
+</body>
+
+</html>
+
+<!-- id="btn-iniciar-sesion" onclick="openRef('./dashboard.html')" -->

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/icon" href="../public/img/logo.ico" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>elBarrio.com</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <link href="../public/css/normalize-card.min.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../public/img/icon_bus.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/dashboard1.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark encabezado sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text1">
+                <strong>elBarrio.com</strong>
+
+            </a>
+        </div>
+    </nav>
+    <div>
+        <div>
+            <div class="radSimpleContainer">
+                <div class="centerContainer contextStep firstLoad">
+                    <div class="paymentContainer">
+                        <div class="messageContainer">
+                        </div>
+                        <div>
+                            <span class="stepLogo paymentStepLogo">
+                                <img src="../public/img/Lock.png">
+                            </span><br>
+                        </div>
+                        <div class="stepHeader">
+                            <h1 class="stepTitle">Selecciona tu forma de pago.</h1>
+                        </div>
+                        <div class="narrowContainer">
+                            <!-- <div class="contextRow contextRowFirst">
+                                Cancela antes del <b><span id="txt-fecha">30</span> y no se te cobrará ningún cargo, hasta que finalice tu periodo de prueba.</b>
+                            </div> -->
+                            <div class="contextRow">
+                                Como recordatorio, <b>te enviaremos un email</b>
+                            </div>
+                            <div class="contextRow">
+                                <div>
+                                    <b>Sin compromisos.&nbsp; &nbsp; </b>
+                                    <br>
+                                    <b>Cancela online en cualquier momento.</b>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="ui-tab-radio ui-tab-radio--active paymentPicker standardHeight" data-toggle="modal" data-target="#modal2"> <!-- id="Tajeta1"-->
+                            <div class="mopNameAndLogos"> 
+                                <span class="ui-tab-radio--text card-type-text paymentActive" >Tarjeta de crédito o débito</span>
+                                <div class="logosContainer" >
+                                    <span class="" >
+                                        <span class="logoIcon VISA"><img src="../public/img/ico_visa.png"></span>
+                                        <span class="logoIcon MASTERCARD"><img src="../public/img/ico_master.png"></span>
+                                        <span class="logoIcon AMEX"><img src="../public/img/icon_amex.png"></span>
+                                        <span class="logoIcon DISCOVERY"><img src="../public/img/icon_discovery.png"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="ui-svg-icon ui-svg-icon--chevron pull-right pickerArrow">
+                            <img src="../public/img/chevron.svg" width="40" height="25" > </span>
+                        </label>
+                        <!-- <label class="ui-tab-radio ui-tab-radio--active paymentPicker standardHeight" data-toggle="modal" data-target="#modal3 " id="tarjet2">
+                            <div class="mopNameAndLogos" >
+                                <span class="ui-tab-radio--text card-type-text paymentActive" >PayPal</span>
+                                <div class="logosContainer">
+                                    <span class="logos logos-inline">
+                                    <span class="logoIcon PAYPAL">
+                                        <img src="../public/img/paypal.png" width="70" height="20">
+                                    </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="ui-svg-icon ui-svg-icon--chevron pull-right pickerArrow">
+                            <img src="../public/img/chevron.svg" width="40" height="25" > </span>
+                        </label> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal -->
+    <!-- otro modal-->
+    <div class="modal" id="modal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style=" padding-left: 65px;   margin-left: auto;
+        margin-right: auto;" role="document">
+            <div class="modal-content" style="    width: 411.988636px;">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Informacion de Compra</strong></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body" style="    height: 392px;">
+                    <div>
+                        <form style="padding-left:30px;padding-right:30px">
+                            <div class="paymentFormContainer">
+                                <div class="messageContainer">
+                                </div>
+                                <div class="stepHeader">
+                                    <h4 class="stepTitle">Configura tu tarjeta de crédito o débito</h4>
+                                </div>
+                                <div class="fieldContainer">
+                                    <div class="">
+                                        <span class="logos logos-block">
+                                        <span class="logoIcon VISA"><img src="../public/img/ico_visa.png"></span>
+                                        <span class="logoIcon MASTERCARD"><img src="/public/img/ico_master.png"></span>
+                                        <span class="logoIcon AMEX"><img src="/public/img/icon_amex.png"></span>
+                                        <span class="logoIcon DISCOVERY"><img src="/public/img/icon_discovery.png"></span>
+                                        <span><img src="/public/img/tail_red.gif" style=" width: 25px; height: 25px;"></span>
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <input class="form-control" type="tel" placeholder="Número de tarjeta" class="ui-text-input medium" id="numTarjet">
+                                        <br>
+                                        <input class="form-control" type="date" class="ui-text-input medium" placeholder="Fecha de vencimiento (MM/AA)" value="" id="fechaV">
+                                        <br>
+                                        <input class="form-control" type="tel" data-testid="creditCardSecurityCode" class="ui-text-input medium" placeholder="Código de seguridad (CVV)" id="codigoV">
+                                        <br>
+                                        <input class="form-control" type="number" id="numero-boletos" name="numero-boletos" placeholder="Número de boletos a comprar">
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <input type="hidden" id="codigoUsuario" name="txt-codigoruta" value="<%= user.id %>">
+                    <input type="hidden" id="precio" name="precio" value="<%= rutas[0].precio %>">
+                    <input type="hidden" id="codigoRuta" name="codigoRuta" value="<%= rutas[0].cod_ruta %>">
+                    <input type="hidden" id="empresa" name="empresa" value="<%= rutas[0].cod_empresa %>">
+                </div>
+                <div class=" modal-footer">
+                    <input id="btn-conf-compra" class=" form-control btn-success " type="button" value="Confirmar compra">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal3" tabindex="-1" role="dialog">
+        <div class="modal-dialog" id="factura" style="padding-left: 80px;   margin-left: auto;
+                margin-right: auto;" role="document">
+            <div class="modal-content" style="    width: 381.988636px;">
+                <div class="modal-body " id="imprimir">
+                    <div class="container-fluid">
+                        <div class="row" id="tarjetas">
+                        </div>
+                        <hr>
+                        <div class=" flex-container">
+                            <a class="btn btn-primary" href="/travel/<%= rutas[0].cod_empresa %>">Regresar</a>
+                            <a class="btn-success btn " href="javascript:pruebaDivAPdf()">Ver Ticket</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <script type="text/javascript" src="../public/js/jquery.min.js"></script>
+            <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+            <script src="../public/js/controlador.js"></script>
+
+            <script type="text/javascript">
+                function pruebaDivAPdf() {
+                    var options = {};
+                    var pdf = new jsPDF('p', 'pt', 'letter');
+
+
+                    pdf.addHTML($("#factura"), 30, 30, options, function() {
+                        var string = pdf.output('datauristring');
+                        $('.preview-pane').attr('src', string);
+                        pdf.save('comprobante.pdf');
+                    });
+
+                }
+            </script>
+</body>
+
+</html>

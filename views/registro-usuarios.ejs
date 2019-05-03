@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Go Bus</title>
+    <link rel="shortcut icon" href="../public/img/icon_bus.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+    <link href="../public/css/estilos.css" rel="stylesheet">
+</head>
+
+<body class="fondoLogin">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light encabezado static-top">
+        <div class="container">
+            <a href="/" class="navbar-brand text1">
+                <strong>elBarrio</strong>
+
+            </a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item text1">
+                    <button type="button" class="btn btn-link" style="display:none" onclick="registrar();">Registrarme</button>
+                </li>
+                <li class="nav-item text1">
+                    <a class="nav-link text1" href="/login">Iniciar Sesión</a>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="centrado">
+                <div class="jumbotron">
+                    <div>
+
+                    </div>
+                    <div class="form-group taman">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Nombre" name="regnom" id="regnom" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Apellidos" name="regapell" id="regapell" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="correo" name="regemail" id="regemail" type="email" required>
+                            <span id="emailOK"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="contraseña" name="regpassword" id="regpassword" type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="confirmar contraseña" name="confpassword" id="confpassword" type="password" required>
+                        </div>
+                        <span id="mostrar" style="color:red; font-size: 14px; display: none">Las contraseñas no coinciden</span>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Telefono" name="regtelefono" id="regtelefono" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="slgen" id="slgen" class="form-control">
+                                <option>Genero</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="text-align:right">
+                            <input id="btn-registrar" type="button" class="btn btn-success" value="Registrarse">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item">
+                                <a href="#">Acerca</a>
+                            </li>
+                            <li class="list-inline-item">&sdot;</li>
+                            <li class="list-inline-item">
+                                <a href="#">Contacto</a>
+                            </li>
+                            <li class="list-inline-item">&sdot;</li>
+                            <li class="list-inline-item">
+                                <a href="#">Terminos de Uso</a>
+                            </li>
+                            <li class="list-inline-item">&sdot;</li>
+                            <li class="list-inline-item">
+                                <a href="#">Politica de Privacidad</a>
+                            </li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; elBarrio 2019. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-3">
+                                <a href="#">
+                                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="#">
+                                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../public/js/jquery.min.js"></script>
+        <script src="../public/js/controlador.js">
+        </script>
+</body>
+
+</html>

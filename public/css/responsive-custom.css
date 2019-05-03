@@ -1,0 +1,40 @@
+@media only screen and (max-width: 847px){
+    .bus-1{
+        display: none;
+    }
+
+    footer p{
+        top: 96%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .bus-1{
+        left: 80%;
+    }
+
+    .bus-1 h1{
+        font-size: 2.5rem;
+    }
+
+    footer p{
+        top: 93%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .bus-1{
+        left: 80%;
+    }
+
+    .bus-1 h1{
+        font-size: 2.5rem;
+    }
+
+    footer p{
+        top: 93%;
+    }
+}
+
+
+
